@@ -89,6 +89,15 @@ volumes:
   workbench:
 ```
 
+## Start services
 
+```bash
+docker compose up -d
+```
+## Stopping services
+
+```bash
+docker compose down 
+```
 
 
