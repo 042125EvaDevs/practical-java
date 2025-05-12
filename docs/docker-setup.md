@@ -78,6 +78,9 @@ services:
       - "3306:3306"
     environment:
       MYSQL_ROOT_PASSWORD: ${DATABASE_PASSWORD}
+      MYSQL_HOST: ${DATABASE_HOST}
+      MYSQL_USER: ${DATABASE_USER}
+      MYSQL_PASSWORD: ${DATABASE_PASSWORD}
       MYSQL_DATABASE: ${DATABASE_NAME}
     volumes:
       - mysql:/var/lib/mysql
