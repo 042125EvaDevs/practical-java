@@ -61,3 +61,8 @@ project.json
 
 # Solutions
 /*solutions
+
+# Environment
+.env
+.env.local
+.env.prod

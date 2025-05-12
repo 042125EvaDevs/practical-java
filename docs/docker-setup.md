@@ -5,6 +5,7 @@ containers to create our database and management tools.
 
 ## 1. Install Docker
 
+
 ## 2. Create `.env`
 
 - Used to store sensitive values
