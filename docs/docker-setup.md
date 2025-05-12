@@ -4,7 +4,8 @@ We will be using [Docker](https://www.docker.com/products/docker-desktop/)
 containers to create our database and management tools.
 
 ## 1. Install Docker
-
+ 
+  [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
 ## 2. Create `.env`
 
@@ -26,7 +27,6 @@ DATABASE_NAME="practical-java"
 _docker-compose.yml_ contents:
 
 ```yaml
-version: '3'
 services:
   postgres:
     image: postgres
@@ -70,7 +70,6 @@ volumes:
 _docker-compose.yml_ contents:
 
 ```yaml
-version: '3'
 services:
   mysql:
     image: mysql:latest
@@ -101,7 +100,7 @@ docker compose up -d
 ## Stopping services
 
 ```bash
-docker compose down 
+docker compose down -v
 ```
 
 
