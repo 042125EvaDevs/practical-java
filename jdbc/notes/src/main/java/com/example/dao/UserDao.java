@@ -2,11 +2,10 @@ package com.example.dao;
 
 import com.example.connection.DatabaseConnection;
 import com.example.model.User;
+import com.example.model.UserBuilder;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
+import java.util.ArrayList;
 import java.util.List;
 
 public class UserDao {
@@ -17,17 +16,17 @@ public class UserDao {
     this.connection = DatabaseConnection.getInstance().getConnection();
   }
 
-  public void createUser (String email, String name) {
-    String sql = "INSERT INTO users (name, email) VALUES (?, ?)";
+  public void createUser (String email, String name, String password) {
+    String sql = "INSERT INTO users (name, email, password) VALUES (?, ?, ?)";
     try (PreparedStatement statement = connection.prepareStatement(sql)) {
       statement.setString(1, name);
       statement.setString(2, email);
+      statement.setString(3, password);
       statement.executeUpdate();
     } catch (SQLException e) {
       e.printStackTrace();
     }
   }
-
 
   public User findById (Integer id) {
 
@@ -43,7 +42,7 @@ public class UserDao {
         String name = resultSet.getString("name");
         String email = resultSet.getString("email");
 
-        return new User(userId, name, email);
+        return new User(userId, name, email, null);
       }
 
     } catch (SQLException e) {
@@ -53,6 +52,31 @@ public class UserDao {
     return null;
   }
 
+  public List<User> getAllUsers() {
+    String sql = "SELECT * FROM users;";
+    try {
+      Statement stmt = connection.createStatement();
+      ResultSet resultSet = stmt.executeQuery(sql);
+      List<User> users = new ArrayList<>();
 
+      while (resultSet.next()) {
+        int id = resultSet.getInt("id");
+        String name = resultSet.getString("name");
+        String email = resultSet.getString("email");
 
+        users.add(new UserBuilder()
+          .name(name)
+          .email(email)
+          .id(id)
+          .build()
+        );
+      }
+
+      return users;
+
+    } catch (SQLException e){
+      e.printStackTrace();
+    }
+    return  List.of();
+  }
 }
