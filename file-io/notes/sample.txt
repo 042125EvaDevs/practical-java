@@ -1,0 +1,1 @@
+Java File I/O (Input/Output) enables reading from and writing to files on the filesystem. The java.io and java.nio packages provide classes for byte- and character-based data handling. Understanding File I/O is essential for tasks like logging, configuration loading, and data persistence.
