@@ -1,4 +1,4 @@
-package com.example.connection;
+package com.example.challenge.connection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -29,7 +29,7 @@ public class DatabaseConnection {
 
   public static DatabaseConnection getInstance() {
     if (INSTANCE == null) {
-//      Class.forName("com.mysql.cj.jdbc.Driver");
+      Class.forName("com.mysql.cj.jdbc.Driver");
       synchronized (DatabaseConnection.class) {
         INSTANCE = new DatabaseConnection();
       }

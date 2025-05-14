@@ -1,9 +1,9 @@
 package com.example.service;
 
-import com.example.dao.UserDao;
-import com.example.exceptions.BadCredentialsException;
-import com.example.exceptions.UserNotFoundException;
-import com.example.model.User;
+import com.example.challenge.dao.UserDao;
+import com.example.challenge.exceptions.BadCredentialsException;
+import com.example.challenge.exceptions.UserNotFoundException;
+import com.example.challenge.model.User;
 
 import java.util.Objects;
 

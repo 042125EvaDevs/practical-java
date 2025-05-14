@@ -1,4 +1,4 @@
-package com.example.model;
+package com.example.challenge.model;
 
 import java.util.Objects;
 

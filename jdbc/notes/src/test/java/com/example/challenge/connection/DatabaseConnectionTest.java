@@ -1,4 +1,4 @@
-package com.example.connection;
+package com.example.challenge.connection;
 
 
 import org.junit.jupiter.api.*;

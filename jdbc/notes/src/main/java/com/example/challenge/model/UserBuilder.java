@@ -1,6 +1,4 @@
-package com.example.model;
-
-import java.util.Objects;
+package com.example.challenge.model;
 
 public class UserBuilder {
 

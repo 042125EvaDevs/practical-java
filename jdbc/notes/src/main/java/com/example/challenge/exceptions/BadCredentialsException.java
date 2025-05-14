@@ -1,4 +1,4 @@
-package com.example.exceptions;
+package com.example.challenge.exceptions;
 
 public class BadCredentialsException extends Exception {
 
