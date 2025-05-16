@@ -1,8 +1,8 @@
-package com.example.challenge.dao;
+package com.example.notes.dao;
 
-import com.example.challenge.connection.DatabaseConnection;
-import com.example.challenge.model.User;
-import com.example.challenge.model.UserBuilder;
+import com.example.notes.connection.DatabaseConnection;
+import com.example.notes.model.User;
+import com.example.notes.model.UserBuilder;
 
 import java.sql.*;
 import java.util.ArrayList;

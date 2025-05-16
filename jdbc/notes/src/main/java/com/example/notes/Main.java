@@ -1,8 +1,8 @@
-package com.example;
+package com.example.notes;
 
-import com.example.challenge.connection.DatabaseConnection;
-import com.example.challenge.dao.UserDao;
-import com.example.challenge.model.User;
+import com.example.notes.connection.DatabaseConnection;
+import com.example.notes.dao.UserDao;
+import com.example.notes.model.User;
 
 import java.sql.Connection;
 import java.util.List;

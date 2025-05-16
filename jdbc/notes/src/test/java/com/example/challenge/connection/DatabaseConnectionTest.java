@@ -1,6 +1,7 @@
 package com.example.challenge.connection;
 
 
+import com.example.notes.connection.DatabaseConnection;
 import org.junit.jupiter.api.*;
 
 class DatabaseConnectionTest {

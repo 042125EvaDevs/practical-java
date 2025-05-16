@@ -5,7 +5,6 @@
 .idea/usage.statistics.xml
 .idea/shelf/
 
-practice/*
-!practice/README.md
 
 solution/*
+

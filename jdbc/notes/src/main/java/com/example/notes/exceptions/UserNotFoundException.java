@@ -1,4 +1,4 @@
-package com.example.challenge.exceptions;
+package com.example.notes.exceptions;
 
 public class UserNotFoundException extends Exception {
 

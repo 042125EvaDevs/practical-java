@@ -1,4 +1,4 @@
-package com.example.challenge.model;
+package com.example.notes.model;
 
 public class UserBuilder {
 

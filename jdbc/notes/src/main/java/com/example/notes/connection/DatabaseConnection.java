@@ -1,4 +1,4 @@
-package com.example.challenge.connection;
+package com.example.notes.connection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -27,7 +27,7 @@ public class DatabaseConnection {
     }
   }
 
-  public static DatabaseConnection getInstance() {
+  public static DatabaseConnection getInstance() throws ClassNotFoundException {
     if (INSTANCE == null) {
       Class.forName("com.mysql.cj.jdbc.Driver");
       synchronized (DatabaseConnection.class) {
