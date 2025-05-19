@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.evaitcs.notes</groupId>
-  <artifactId>unit-testing-notes</artifactId>
+  <artifactId>practice</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <properties>
@@ -14,18 +14,14 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
+
   <dependencies>
+
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter</artifactId>
       <version>RELEASE</version>
       <scope>test</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>org.assertj</groupId>
-      <artifactId>assertj-core</artifactId>
-      <version>3.27.2</version>
     </dependency>
 
   </dependencies>
